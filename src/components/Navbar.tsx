@@ -58,7 +58,7 @@ export function Navbar() {
         <motion.div 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden absolute top-full left-0 right-0 bg-background border-b border-border shadow-lg py-4 px-4 flex flex-col gap-4"
+          className="md:hidden absolute top-full left-0 right-0 bg-background/80 backdrop-blur-xl border-b border-border/50 shadow-lg py-4 px-4 flex flex-col gap-4"
         >
           <Link href="#overview" onClick={() => setIsMobileMenuOpen(false)} className="text-foreground font-medium p-2">Overview</Link>
           <Link href="#amenities" onClick={() => setIsMobileMenuOpen(false)} className="text-foreground font-medium p-2">Amenities</Link>
